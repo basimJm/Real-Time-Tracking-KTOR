@@ -25,11 +25,12 @@ class TrackingController() {
         role: String,
         actionType: String,
         userName: String,
+         assignedTo:String,
         lat: Double,
         long: Double,
     ) {
         val user =
-            User(role = role, actionType = actionType, userName = userName, lat = lat, long = long)
+            User(role = role, actionType = actionType, userName = userName,assignedTo =assignedTo, lat = lat, long = long)
         val userJson = Json.encodeToString(user)
 
         members.values.forEach { member ->

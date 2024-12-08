@@ -39,6 +39,7 @@ fun Route.trackingSocket(trackingController: TrackingController) {
                         userName = session.userName,
                         actionType = event.actionType,
                         lat = event.lat,
+                        assignedTo = event.assignedTo,
                         long = event.long,
                         role = event.role
                     )
